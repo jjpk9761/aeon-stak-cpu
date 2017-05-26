@@ -3,7 +3,7 @@
  * here is the size of your L3 cache divided by 2. Intel mid-to-high end desktop processors have 2MB of L3
  * cache per physical core. Low end cpus can have 1.5 or 1 MB while Xeons can have 2, 2.5 or 3MB per core.
  */
-"cpu_thread_num" : 1,
+"cpu_thread_num" : 6,
 
 /*
  * Thread configuration for each thread. Make sure it matches the number above.
@@ -23,6 +23,11 @@
  */
 "cpu_threads_conf" : [ 
 	{ "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : 0 },
+	{ "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : 1 },
+	{ "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : 2 },
+	{ "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : 3 },
+	{ "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : 4 },
+	{ "low_power_mode" : true, "no_prefetch" : true, "affine_to_cpu" : 5 },
 	
 ],
 
@@ -96,7 +101,7 @@
  * pool_password  - Can be empty in most cases or "x".
  */
 "pool_address" : "mine.aeon-pool.com:3333",
-"wallet_address" : "WmryHfGGBWyhFfH23FRCq1cMe7UdZ2ocZWEWLMGHN7kM9q2cC7gYHcXaMiBqbxdX5m63vQ2fCAWKd6kE1pQB7U1K1XEx7xaeQ.2000",
+"wallet_address" : "WmryHfGGBWyhFfH23FRCq1cMe7UdZ2ocZWEWLMGHN7kM9q2cC7gYHcXaMiBqbxdX5m63vQ2fCAWKd6kE1pQB7U1K1XEx7xaeQ.8192",
 "pool_password" : "x",
 
 /*
